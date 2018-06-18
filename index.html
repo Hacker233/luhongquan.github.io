@@ -19,6 +19,11 @@
     <div>
         <button id="btn-1">点击有惊喜</button>
     </div>
-    <script src="/main.js"></script>
+    <script>
+            let btn=document.getElementById('btn-1');
+            btn.addEventListener("touchend",function(){
+            btn.innerHTML="别慌小胖子,还没做完!";
+        });
+    </script>
 </body>
 </html>
